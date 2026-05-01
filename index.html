@@ -532,16 +532,18 @@ textarea.form-input { resize: vertical; min-height: 110px; }
       <span>contact@polarcodesolutions.com</span>
     </a>
     <div class="contact-form">
+      <form action="https://formspree.io/f/maqvyayp" method="POST">
       <div class="form-grid">
-        <div class="form-group"><label class="form-label">Prénom *</label><input type="text" class="form-input" placeholder="Jean"></div>
-        <div class="form-group"><label class="form-label">Nom *</label><input type="text" class="form-input" placeholder="Dupont"></div>
-        <div class="form-group"><label class="form-label">Email *</label><input type="email" class="form-input" placeholder="jean@entreprise.com"></div>
-        <div class="form-group"><label class="form-label">Téléphone</label><input type="tel" class="form-input" placeholder="06 XX XX XX XX"></div>
-        <div class="form-group"><label class="form-label">Secteur d'activité</label><input type="text" class="form-input" placeholder="BTP, Immobilier, Santé..."></div>
-        <div class="form-group"><label class="form-label">Budget estimé</label><input type="text" class="form-input" placeholder="À définir ensemble"></div>
-        <div class="form-group full"><label class="form-label">Décrivez votre projet *</label><textarea class="form-input" placeholder="Quel outil souhaitez-vous développer ? Quels sont vos besoins principaux ?"></textarea></div>
+        <div class="form-group"><label class="form-label">Prénom *</label><input type="text" name="prenom" class="form-input" placeholder="Jean" required></div>
+        <div class="form-group"><label class="form-label">Nom *</label><input type="text" name="nom" class="form-input" placeholder="Dupont" required></div>
+        <div class="form-group"><label class="form-label">Email *</label><input type="email" name="email" class="form-input" placeholder="jean@entreprise.com" required></div>
+        <div class="form-group"><label class="form-label">Téléphone</label><input type="tel" name="telephone" class="form-input" placeholder="06 XX XX XX XX"></div>
+        <div class="form-group"><label class="form-label">Secteur d'activité</label><input type="text" name="secteur" class="form-input" placeholder="BTP, Immobilier, Santé..."></div>
+        <div class="form-group"><label class="form-label">Budget estimé</label><input type="text" name="budget" class="form-input" placeholder="À définir ensemble"></div>
+        <div class="form-group full"><label class="form-label">Décrivez votre projet *</label><textarea name="projet" class="form-input" placeholder="Quel outil souhaitez-vous développer ? Quels sont vos besoins principaux ?" required></textarea></div>
       </div>
-      <button class="form-submit">Envoyer ma demande →</button>
+      <button type="submit" class="form-submit">Envoyer ma demande →</button>
+      </form>
     </div>
   </div>
 </section>
